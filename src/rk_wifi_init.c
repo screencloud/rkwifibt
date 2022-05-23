@@ -100,8 +100,6 @@ static wifi_device supported_wifi_devices[] = {
 	{"AP6275P",     "14e4:449d"},
 	{"RTL8822BE",	"10ec:b822"},
 	{"RTL8822CE",	"10ec:c822"},
-	{"RTL8723DU",	"0bda:d723"},
-	{"RTL8821CU",   "0bda:c820"}
 };
 
 // TODO: use new ANDROID_SOCKET mechanism, once support for multiple
@@ -123,8 +121,6 @@ static wifi_device supported_wifi_devices[] = {
 #define RTL8822CE_DRIVER_MODULE_PATH "/system/lib/modules/8822ce.ko"
 #define BCM_DRIVER_MODULE_PATH       "/system/lib/modules/bcmdhd.ko"
 #define BCM_PCIE_DRIVER_MODULE_PATH   "/system/lib/modules/bcmdhd.ko"
-#define RTL8821CU_DRIVER_MODULE_PATH "/system/lib/modules/8821cu.ko"
-#define RTL8723DU_DRIVER_MODULE_PATH "/system/lib/modules/8723du.ko"
 #define DRIVER_MODULE_PATH_UNKNOW    ""
 
 #define RTL8822BS_DRIVER_MODULE_NAME "8822bs"
@@ -141,8 +137,6 @@ static wifi_device supported_wifi_devices[] = {
 #define RTL8812AU_DRIVER_MODULE_NAME "8812au"
 #define RTL8822CE_DRIVER_MODULE_NAME "8822ce"
 #define BCM_DRIVER_MODULE_NAME       "bcmdhd"
-#define RTL8821CU_DRIVER_MODULE_NAME "8821cu"
-#define RTL8723DU_DRIVER_MODULE_NAME "8723du"
 
 #define AP6330_BT_FIRMWARE_MODULE_PATH "/system/etc/firmware/rk903.hcd"
 #define AP6212_BT_FIRMWARE_MODULE_PATH "/system/etc/firmware/bcm43438a0.hcd"
@@ -184,8 +178,6 @@ wifi_ko_file_name module_list[] =
 	{"AP6275S",         BCM_DRIVER_MODULE_PATH, UNKKOWN_DRIVER_MODULE_ARG, AP6275_BT_FIRMWARE_MODULE_PATH},
 	{"AP6275P",         BCM_PCIE_DRIVER_MODULE_PATH, UNKKOWN_DRIVER_MODULE_ARG, AP6275_BT_FIRMWARE_MODULE_PATH},
 	{"APXXX",           BCM_DRIVER_MODULE_PATH, UNKKOWN_DRIVER_MODULE_ARG, ""},
-	{"RTL8821CU", RTL8821CU_DRIVER_MODULE_PATH, UNKKOWN_DRIVER_MODULE_ARG, ""},
-	{"RTL8723DU", RTL8723DU_DRIVER_MODULE_PATH, UNKKOWN_DRIVER_MODULE_ARG, ""},
 	{"UNKNOW",       DRIVER_MODULE_PATH_UNKNOW, UNKKOWN_DRIVER_MODULE_ARG, ""}
 
 };
